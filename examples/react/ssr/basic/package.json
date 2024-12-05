@@ -12,6 +12,7 @@
     "@picocss/pico": "^1.5.10",
     "@vinxi/react": "0.2.5",
     "@vitejs/plugin-react": "^4.0.4",
+    "@zedux/react": "1.2.3",
     "autoprefixer": "^10.4.15",
     "react": "0.0.0-experimental-035a41c4e-20230704",
     "react-dom": "0.0.0-experimental-035a41c4e-20230704",

@@ -1,3 +1,4 @@
+import { atom, useAtomState } from "@zedux/react";
 import React from "react";
 
 import "./style.css";
@@ -24,9 +25,14 @@ function useWebSocket() {
 	return { message, ws };
 }
 
+const countAtom = atom("counter", 0);
+
 export default function App({ assets }) {
 	const [count, setCount] = React.useState(0);
 	const { message, ws } = useWebSocket();
+
+	const [count2, setCount2] = useAtomState(countAtom);
+
 	return (
 		<html lang="en">
 			<head>
@@ -43,6 +49,13 @@ export default function App({ assets }) {
 						}}
 					>
 						Click me: {count}!
+					</button>
+					<button
+						onClick={() => {
+							setCount2(count2 + 1);
+						}}
+					>
+						Click me2: {count2}!
 					</button>
 					<div>Message from server: {message}</div>
 				</section>

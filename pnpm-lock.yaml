@@ -417,6 +417,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.0.4
         version: 4.1.0(vite@4.5.0)
+      '@zedux/react':
+        specifier: 1.2.3
+        version: 1.2.3(react@0.0.0-experimental-035a41c4e-20230704)
       autoprefixer:
         specifier: ^10.4.15
         version: 10.4.16(postcss@8.4.49)
@@ -7114,6 +7117,25 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+    dev: false
+
+  /@zedux/atoms@1.2.3:
+    resolution: {integrity: sha512-mGEWc1T0NW+tlsDwdEQU2h6tQQNjDBx1aVKGbQeE9DmoKcvYmuY926R9aEgJ24UNcmEyxR3NIfzLgr1quc8IVQ==}
+    dependencies:
+      '@zedux/core': 1.2.3
+    dev: false
+
+  /@zedux/core@1.2.3:
+    resolution: {integrity: sha512-hrjedEbUA/Xn4WBvcBsggl4sHF8dwqoPeAH71MZlSZ1x4wIXyWhszyoiZenPHYi7SscCP0FfBWQRbyUxrZGGhQ==}
+    dev: false
+
+  /@zedux/react@1.2.3(react@0.0.0-experimental-035a41c4e-20230704):
+    resolution: {integrity: sha512-j5FxYacTs8yUd0s2jy2HuvKuoQcuoZ02CLWcX43nhetaT6tVssQqGrIx1whfNtR9AjpH6wvM112p72GNb2ErLQ==}
+    peerDependencies:
+      react: '>=18.0.0'
+    dependencies:
+      '@zedux/atoms': 1.2.3
+      react: 0.0.0-experimental-035a41c4e-20230704
     dev: false
 
   /abbrev@1.1.1:
